@@ -24,7 +24,7 @@ const buttonClick=()=>{
 console.log(limit)
 
 useEffect(()=>{
-  fetch(`${Url}/api/news/${limit?'home':'all'}`)
+  fetch(`http://13.53.132.201:8080/api/news/${limit?'home':'all'}`)
   .then(response=>response.json())
   .then(data=>setNews(data))
   .catch(error => console.error("Error fetching foods:", error));
