@@ -1,2 +1,2 @@
-const Url = "http://13.53.132.201:8080";
+const Url = "https://backend-kn0qha.fly.dev";
 export default Url;
