@@ -6,7 +6,7 @@ const Blog = () => {
   const [data,setData]=useState([])
 
   useEffect(() => {
-    fetch(`http://13.53.132.201:8080/GetContents`)
+    fetch(`https://backend-kn0qha.fly.dev/GetContents`)
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
