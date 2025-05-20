@@ -24,7 +24,7 @@ const buttonClick=()=>{
 console.log(limit)
 
 useEffect(()=>{
-  fetch(`https://backend-kn0qha.fly.dev/api/news/${limit?'home':'all'}`)
+  fetch(`https://rogcryptobackend-648491182682.europe-west1.run.app/api/news/${limit?'home':'all'}`)
   .then(response=>response.json())
   .then(data=>setNews(data))
   .catch(error => console.error("Error fetching foods:", error));
