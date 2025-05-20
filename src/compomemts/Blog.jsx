@@ -6,7 +6,7 @@ const Blog = () => {
   const [data,setData]=useState([])
 
   useEffect(() => {
-    fetch(`https://backend-kn0qha.fly.dev/GetContents`)
+    fetch(`https://rogcryptobackend-648491182682.europe-west1.run.app//GetContents`)
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
