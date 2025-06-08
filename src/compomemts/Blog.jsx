@@ -6,7 +6,7 @@ const Blog = () => {
   const [data,setData]=useState([])
 
   useEffect(() => {
-    fetch(`https://rogcryptobackend-648491182682.europe-west1.run.app//GetContents`)
+    fetch(`https://rogcrypto.gigalixirapp.com/GetContents`)
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
