@@ -1,2 +1,2 @@
-const Url = "https://rogcryptobackend-648491182682.europe-west1.run.app";
+const Url = "https://rogcrypto.gigalixirapp.com";
 export default Url;
