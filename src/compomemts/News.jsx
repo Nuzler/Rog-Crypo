@@ -3,6 +3,7 @@ import News1 from '../assets/News1.jpg';
 import News2 from '../assets/News2.jpg';
 import News3 from '../assets/News3.jpg';
 import { Link } from 'react-router-dom';
+import Url from '../assets/assets'
 
 const News = () => {
 
@@ -23,7 +24,7 @@ const buttonClick=()=>{
 console.log(limit)
 
 useEffect(()=>{
-  fetch(`http://localhost:8080/api/news/${limit?'home':'all'}`)
+  fetch(`https://rogcrypto.gigalixirapp.com/api/news/${limit?'home':'all'}`)
   .then(response=>response.json())
   .then(data=>setNews(data))
   .catch(error => console.error("Error fetching foods:", error));
