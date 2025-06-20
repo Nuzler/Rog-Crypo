@@ -55,11 +55,13 @@ console.log(news)
               <h1>{item.author}</h1>
               <h1>{item.publishedDate}</h1>
             </div>
-            <a className='text-white px-2 '
-                href={item.link}
+            <Link className='text-white px-2 '
+                to={`/news/${index}`}
+                onClick={() =>{
+                  scrollToTop();
+                  localStorage.setItem('newsItem', JSON.stringify(item));
+                } }
                 >
-                Read More
-            </a>
             
           </div>
           )} 
