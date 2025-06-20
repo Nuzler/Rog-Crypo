@@ -19,8 +19,8 @@ function HomePage({ introDone, setIntroDone }) {
   return (
     <>
       <div className="pt-[80px] z-10 relative" id="hero">
-      {!introDone && <PageIntro onFinish={() => setIntroDone(true)} />}
-      {introDone && <Hero />}
+      
+      <Hero />
       </div>
       <EconomicCalendar/>
       <div id="news">
