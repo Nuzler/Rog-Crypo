@@ -11,13 +11,11 @@ import Coinbase from '../assets/coinbase-logo.png'
 const Referellink = () => {
 
     const items=[{id:1,name:'Mexc.com',image:Mexc,discription:'Join MEXC with our referral link and start trading over 1,500 cryptocurrencies on one of the fastest-growing global exchanges.',color:1},
-        {id:2,name:'Binance',image:Binance,discription:'Sign up on Binance through our link and enjoy low trading fees, advanced tools, and access to the world’s largest crypto exchange.',color:2},
+        
         {id:3,name:'Bybit',image:Bybit,discription:'Trade crypto derivatives and spot with lightning-fast execution. Use our referral to get bonuses and earn rewards!',color:1},
         {id:4,name:'Kucoin',image:Kucoin,discription:'Access thousands of altcoins, margin trading, and staking options. Sign up with our KuCoin link and be part of the People’s Exchange.',color:2},
         {id:5,name:'Bitget',image:Bitget,discription:'Start copy trading with top traders or use futures with advanced tools on Bitget. Register with our link for exclusive welcome bonuses.',color:1},
-        {id:6,name:'Gate.io',image:Gate,discription:'Explore a wide range of tokens and DeFi projects. Sign up through our Gate.io referral for trading fee discounts and giveaways.',color:2},
-        {id:7,name:'Kraken',image:Kraken,discription:'Get started with a secure, US-regulated exchange. Sign up with our referral link for access to fiat-to-crypto trading and staking.',color:1},
-        {id:8,name:'Coinbase',image:Coinbase,discription:'Sign up with Coinbase for a beginner-friendly way to buy crypto.Use our referral to earn free Bitcoin on your first trade.',color:2}
+        
     ]
 
   return (
