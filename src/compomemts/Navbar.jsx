@@ -69,7 +69,7 @@ const Navbar = ({setIntro} ) => {
               <div className='bg-[#1CFA1D] w-full h-0.5 opacity-10' ></div>
               <li  className='  hover:text-amber-600 cursor-pointer '><Link  to={`/`}  onClick={() => {document.getElementById('news').scrollIntoView({ behavior: 'smooth' });click();setIntro(true);}}>NEWS</Link></li>
               <div className='bg-[#1CFA1D] w-full h-0.5 opacity-10'></div>
-              <li className='  hover:text-amber-600 cursor-pointer '><Link onClick={() => {document.getElementById('refer').scrollIntoView({ behavior: 'smooth' });click();setIntro(true);}} to={`/`}>REFEREL LINKS</Link></li>
+              <li className='  hover:text-amber-600 cursor-pointer '><Link onClick={() => {document.getElementById('refer').scrollIntoView({ behavior: 'smooth' });click();setIntro(true);}} to={`/`}>TOP DEALS</Link></li>
               <div className='bg-[#1CFA1D] w-full h-0.5 opacity-10'></div>
               <li className=' hover:text-amber-600 cursor-pointer ' ><Link onClick={()=>{click();}} to={`/myblog`}>MY BlOG</Link></li>
               <div className='bg-[#1CFA1D] w-full h-0.5 opacity-10'></div>
@@ -92,7 +92,7 @@ const Navbar = ({setIntro} ) => {
     <ul className="hidden md:flex font-Orbitron gap-15 text-[14px]  font-bold text-white  md:mx-2   ">
           <li  className="hover:text-[#1CFA1D] cursor-pointer ease-in-out duration-1000"onClick={() => {scrollToTop();setIntro(true);setIntro(true);}}><Link to={`/`}>Home</Link></li>
           <li  className="hover:text-[#1CFA1D] cursor-pointer ease-in-out duration-1000" onClick={() =>{ document.getElementById('news').scrollIntoView({ behavior: 'smooth' });setIntro(true);}}><Link to={`/`}>NEWS</Link></li>
-          <li className="hover:text-[#1CFA1D] cursor-pointer ease-in-out duration-1000"onClick={() => {document.getElementById('refer').scrollIntoView({ behavior: 'smooth' });setIntro(true);}}><Link to={`/`}>REFEREL LINKS</Link></li>
+          <li className="hover:text-[#1CFA1D] cursor-pointer ease-in-out duration-1000"onClick={() => {document.getElementById('refer').scrollIntoView({ behavior: 'smooth' });setIntro(true);}}><Link to={`/`}>TOP DEALS</Link></li>
           <li className="hover:text-[#1CFA1D] cursor-pointer ease-in-out duration-1000"><Link to={`/myblog`}>My Blog</Link></li>
           <li className="hover:text-[#1CFA1D] cursor-pointer ease-in-out duration-1000" onClick={() => {document.getElementById('youtube').scrollIntoView({ behavior: 'smooth' });setIntro(true);}}><Link to={`/`}>MY VIDEOS</Link></li>
     </ul>

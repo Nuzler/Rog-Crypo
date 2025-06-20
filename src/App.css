@@ -1,0 +1,8 @@
+.news-content h2 {
+  font-family:monospace;  
+  font-size: 1.75rem; /* or 2rem if you want bigger headings */
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1CFA1D; /* Optional: green heading for crypto theme */
+}

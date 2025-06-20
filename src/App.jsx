@@ -12,6 +12,7 @@ import Youtube from './compomemts/Youtube';
 import NewsDetails from './compomemts/NewsDetails';
 import Blog from './compomemts/Blog';
 import PageIntro from './compomemts/PageIntro';
+import EconomicCalendar from './compomemts/EconomicCalendar';
 
 function HomePage({ introDone, setIntroDone }) {
  
@@ -21,6 +22,7 @@ function HomePage({ introDone, setIntroDone }) {
       {!introDone && <PageIntro onFinish={() => setIntroDone(true)} />}
       {introDone && <Hero />}
       </div>
+      <EconomicCalendar/>
       <div id="news">
         <News />
       </div>
@@ -30,6 +32,7 @@ function HomePage({ introDone, setIntroDone }) {
       <div id="youtube">
         <Youtube />
       </div>
+      
       <Footer />
     </>
   );
@@ -53,6 +56,7 @@ function App() {
         <div className="pt-5 z-10 relative">
           <Routes>
             <Route path="/" element={<HomePage introDone={introDone} setIntroDone={setIntroDone}  />} />
+            
             <Route path="/news/:index" element={<NewsDetails setIntro={setIntroDone} />} />
             <Route path="/myblog" element={<Blog />} />
           </Routes>

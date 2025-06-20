@@ -40,7 +40,7 @@ const CryptoTicker = () => {
                   : 'text-red-400'
               }`}
             >
-             {crypto.price !== null && crypto.price !== undefined ? crypto.price.toFixed(2) : coin.price_change_percentage_24h.toFixed(2)}
+             {coin.price_change_percentage_24h !== null && coin.price_change_percentage_24h !== undefined? coin.price_change_percentage_24h.toFixed(2): 'N/A'}
             </span>
           </div>
         ))}
