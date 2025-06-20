@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Url from '../assets/assets'
 
 const Youtube = () => {
 const [videos,setVideos]=useState([])
@@ -15,7 +16,7 @@ useEffect(()=>{
   }).toString();
   
 
-   fetch('http://localhost:8080/api/videos')
+   fetch(`${Url}/api/videos`)
     .then(res => {
     if (!res.ok) throw new Error('Network response was not ok');
     return res.json();

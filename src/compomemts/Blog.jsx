@@ -6,7 +6,8 @@ const Blog = () => {
   const [data,setData]=useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:8080/GetContents`)
+    fetch(`https://rogcrypto.gigalixirapp.com/GetContents`)
+
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error fetching data:', error));
