@@ -62,7 +62,8 @@ console.log(news)
                   localStorage.setItem('newsItem', JSON.stringify(item));
                 } }
                 >
-            
+               Read More
+            </Link>
           </div>
           )} 
         </div>
