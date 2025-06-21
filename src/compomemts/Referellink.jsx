@@ -12,8 +12,8 @@ const Referellink = () => {
 
     const items=[{id:1,name:'Mexc.com',image:Mexc,discription:'Join MEXC with our referral link and start trading over 1,500 cryptocurrencies on one of the fastest-growing global exchanges.',color:1,link:'https://www.mexc.com/register?inviteCode=mexc-ROGCRYPTO'},
         
-        {id:3,name:'Bybit',image:Bybit,discription:'Trade crypto derivatives and spot with lightning-fast execution. Use our referral to get bonuses and earn rewards!',color:2,link:'https://www.bitget.site/expressly?channelCode=gflf&vipCode=ROGYT10K&languageType=0&groupId=559009'},
-        {id:4,name:'Kucoin',image:Kucoin,discription:'Access thousands of altcoins, margin trading, and staking options. Sign up with our KuCoin link and be part of the People’s Exchange.',color:2,link:'https://www.mexc.com/register?inviteCode=mexc-ROGCRYPTO'},
+        {id:3,name:'Bybit',image:Bybit,discription:'Trade crypto derivatives and spot with lightning-fast execution. Use our referral to get bonuses and earn rewards!',color:2,link:'https://partner.bybit.com/b/ROGCRYPTO'},
+        {id:4,name:'Kucoin',image:Kucoin,discription:'Access thousands of altcoins, margin trading, and staking options. Sign up with our KuCoin link and be part of the People’s Exchange.',color:2,link:'https://www.kucoin.com/r/af/rogcrypto'},
         {id:5,name:'Bitget',image:Bitget,discription:'Start copy trading with top traders or use futures with advanced tools on Bitget. Register with our link for exclusive welcome bonuses.',color:1,link:'https://www.bitget.site/expressly?channelCode=gflf&vipCode=ROGYT10K&languageType=0&groupId=559009'},
         
     ]
