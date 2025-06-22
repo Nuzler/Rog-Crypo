@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -13,9 +13,10 @@ import NewsDetails from './compomemts/NewsDetails';
 import Blog from './compomemts/Blog';
 import PageIntro from './compomemts/PageIntro';
 import EconomicCalendar from './compomemts/EconomicCalendar';
+import AddCard from './compomemts/AddCard';
 
-function HomePage({ introDone, setIntroDone }) {
- 
+function HomePage({ introDone, setIntroDone , showAddCard , setShowAddCard}) {
+
   return (
     <>
       <div className="pt-[80px] z-10 relative" id="hero">
@@ -32,8 +33,26 @@ function HomePage({ introDone, setIntroDone }) {
       <div id="youtube">
         <Youtube />
       </div>
+      <AddCard/>
       
       <Footer />
+
+        {showAddCard && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-100">
+          <div className="bg-black rounded-xl shadow-xl p-6 max-w-md w-full relative">
+            {/* Close button */}
+            <button
+              onClick={() => setShowAddCard(false)}
+              className="absolute top-2 right-3 text-2xl font-bold text-white hover:text-red-500"
+            >
+              &times;
+            </button>
+
+            {/* Your AddCard content */}
+            <AddCard />
+          </div>
+        </div>
+      )}
     </>
   );
 }
@@ -41,21 +60,31 @@ function HomePage({ introDone, setIntroDone }) {
 function App() {
 
   const [introDone, setIntroDone] = useState(false);
+  const [showAddCard, setShowAddCard] = useState(false);
+  const blurClass = showAddCard ? 'blur-sm pointer-events-none select-none' : '';
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowAddCard(true);
+    }, 5000); // 5 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="relative w-full overflow-hidden bg-black">
       <BrowserRouter>
         {/* Navbar and ticker (always visible) */}
-        <div className="fixed top-[0px] w-full z-30">
+        <div className={`fixed top-[0px] w-full z-30 ${blurClass}`}>
           <Navbar setIntro={setIntroDone}/>
         </div>
-        <div className="fixed top-[60px] w-full z-20">
+        <div className={`fixed top-[60px] w-full z-20 ${blurClass}`}>
           <CoinPrice />
         </div>
 
         {/* Main routed content */}
         <div className="pt-5 z-10 relative">
           <Routes>
-            <Route path="/" element={<HomePage introDone={introDone} setIntroDone={setIntroDone}  />} />
+            <Route path="/" element={<HomePage introDone={introDone} setIntroDone={setIntroDone}  showAddCard={showAddCard} setShowAddCard={setShowAddCard}  />} />
             
             <Route path="/news/:index" element={<NewsDetails setIntro={setIntroDone} />} />
             <Route path="/myblog" element={<Blog />} />
