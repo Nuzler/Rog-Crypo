@@ -37,22 +37,7 @@ function HomePage({ introDone, setIntroDone , showAddCard , setShowAddCard}) {
       
       <Footer />
 
-        {showAddCard && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-100">
-          <div className="bg-black rounded-xl shadow-xl p-6 max-w-md w-full relative">
-            {/* Close button */}
-            <button
-              onClick={() => setShowAddCard(false)}
-              className="absolute top-2 right-3 text-2xl font-bold text-white hover:text-red-500"
-            >
-              &times;
-            </button>
-
-            {/* Your AddCard content */}
-            <AddCard />
-          </div>
-        </div>
-      )}
+      
     </>
   );
 }
