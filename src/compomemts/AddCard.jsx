@@ -1,5 +1,5 @@
 import React from 'react'
-import Add from '../assets/add.jpg'
+import Add from '../assets/add2.jpg'
 import { AiFillCloseSquare } from "react-icons/ai";
 
 const AddCard = () => {
