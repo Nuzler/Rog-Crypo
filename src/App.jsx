@@ -33,7 +33,7 @@ function HomePage({ introDone, setIntroDone , showAddCard , setShowAddCard}) {
       <div id="youtube">
         <Youtube />
       </div>
-      <AddCard/>
+      
       
       <Footer />
 
