@@ -59,10 +59,10 @@ function App() {
     <div className="relative w-full overflow-hidden bg-black">
       <BrowserRouter>
         {/* Navbar and ticker (always visible) */}
-        <div className={`fixed top-[0px] w-full z-30 ${blurClass}`}>
+        <div className={`fixed top-[0px] w-full z-30 `}>
           <Navbar setIntro={setIntroDone}/>
         </div>
-        <div className={`fixed top-[60px] w-full z-20 ${blurClass}`}>
+        <div className={`fixed top-[60px] w-full z-20 `}>
           <CoinPrice />
         </div>
 
