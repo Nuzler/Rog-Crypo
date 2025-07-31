@@ -6,7 +6,7 @@ const[calenderData,setCalenderData]=useState([])
 const[data,setData]=useState([])
 
 useEffect(()=>{
-    fetch('https://api.tradingeconomics.com/calendar?c=ff7994bd343a451:uvb46yjqu4l0far')
+    fetch('https://api.tradingeconomics.com/calendar?c=9d2d95974b9345c:t8rwmujkay2cheq')
     .then(response=>response.json())
     .then(data=>setCalenderData(data))
     .catch(error=>console.error(error))
