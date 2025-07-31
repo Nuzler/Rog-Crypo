@@ -6,7 +6,7 @@ const Blog = () => {
   const [data,setData]=useState([])
 
   useEffect(() => {
-    fetch(`https://rogcrypto.gigalixirapp.com/GetContents`)
+    fetch(`https://selfish-rozanna-nuzler-ae498c1e.koyeb.app/GetContents`)
 
       .then(response => response.json())
       .then(data => setData(data))
