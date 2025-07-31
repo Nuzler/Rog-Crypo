@@ -24,7 +24,7 @@ const buttonClick=()=>{
 console.log(limit)
 
 useEffect(()=>{
-  fetch(`https://rogcrypto.gigalixirapp.com/api/news/${limit?'home':'all'}`)
+  fetch(`https://selfish-rozanna-nuzler-ae498c1e.koyeb.app/api/news/${limit?'home':'all'}`)
   .then(response=>response.json())
   .then(data=>setNews(data))
   .catch(error => console.error("Error fetching foods:", error));
